@@ -2,6 +2,15 @@ import armas.*
 import elementos.*
 
 object luisa {
+    var personajeActivo = mario
+
+    method cambiarPersonaje(nuevoPersonaje) {
+     personajeActivo = nuevoPersonaje
+    }
+
+    method aparece(elemento) {
+        personajeActivo.encontrar(elemento)
+    }
 
 }
 object floki {
